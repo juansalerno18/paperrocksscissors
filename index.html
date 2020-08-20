@@ -1,0 +1,94 @@
+<script>
+  +  let playerPlay = prompt(`Rock, paper or scissors`)
+  const choices = [`null`, `rock`, `paper`, `scissors`];
+  let number;
+  let play;
+  let result;
+  let value;
+
+  function computerPlay(choices, number, play, result) {
+    number = (Math.floor(Math.random() * 3) + 1);
+    play = choices[number];
+    result = play;
+    return result;
+  }
+  value = computerPlay(choices, number, play, result)
+  console.log(value)
+
+
+  let computerScore = 0;
+  let playerScore = 0;
+
+
+  if ((playerPlay.toLowerCase() == `rock`) && (value == `rock`)) {
+    console.log(`It's a tie`)
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+  else if ((playerPlay.toLowerCase() == `rock`) && (value == `paper`)) {
+    console.log(`Computer wins`)
+    computerScore++
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+  else if ((playerPlay.toLowerCase() == `rock`) && (value == `scissors`)) {
+    console.log(`Player wins`)
+    playerScore++
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+  else if ((playerPlay.toLowerCase() == `paper`) && (value == `rock`)) {
+    console.log(`Player wins`)
+    playerScore++
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+  else if ((playerPlay.toLowerCase() == `paper`) && (value == `paper`)) {
+    console.log(`It's a tie`)
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+  else if ((playerPlay.toLowerCase() == `paper`) && (value == `scissors`)) {
+    console.log(`Computer wins`)
+    computerScore++
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+  else if ((playerPlay.toLowerCase() == `scissors`) && (value == `rock`)) {
+    console.log(`Computer wins`)
+    computerScore++
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+  else if ((playerPlay.toLowerCase() == `scissors`) && (value == `paper`)) {
+    console.log(`Player wins`)
+    playerScore++
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+  else if ((playerPlay.toLowerCase() == `scissors`) && (value == `scissors`))
+  {
+    console.log(`It's a tie`)
+    console.log(`Player score =`+
+      playerScore)
+    console.log(`Computer score =`+
+      computerScore)
+  }
+
+</script>
